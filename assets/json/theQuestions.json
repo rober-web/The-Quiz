@@ -1,0 +1,155 @@
+{
+    "questions": [
+      {
+        "question": "What does DOM stand for?",
+        "options": ["Document Object Model", "Data Object Model", "Dynamic Object Model", "Digital Object Model"],
+        "correctAnswer": "Document Object Model"
+      },
+      {
+        "question": "Which keyword is used to declare a variable in JavaScript?",
+        "options": ["var", "let", "const", "both var and let"],
+        "correctAnswer": "both var and let"
+      },
+      {
+        "question": "What is the result of 10 + '5' in JavaScript?",
+        "options": ["15", "105", "Error", "undefined"],
+        "correctAnswer": "105"
+      },
+      {
+        "question": "How do you check the data type of a variable in JavaScript?",
+        "options": ["typeOf", "dataType", "varType", "typeof"],
+        "correctAnswer": "typeof"
+      },
+      {
+        "question": "Which function is used to print something in the console?",
+        "options": ["console.print()", "print()", "log()", "display()"],
+        "correctAnswer": "console.log()"
+      },
+      {
+        "question": "What is the purpose of the 'this' keyword in JavaScript?",
+        "options": ["Refers to the current function", "Refers to the global object", "Refers to the current object", "Refers to the previous object"],
+        "correctAnswer": "Refers to the current object"
+      },
+      {
+        "question": "How do you comment out multiple lines in JavaScript?",
+        "options": ["// This is a comment", "/* This is a comment */", "<!-- This is a comment -->", "# This is a comment"],
+        "correctAnswer": "/* This is a comment */"
+      },
+      {
+        "question": "Which built-in method returns the length of a string in JavaScript?",
+        "options": ["length()", "getSize()", "count()", "size()"],
+        "correctAnswer": "length()"
+      },
+      {
+        "question": "What is the purpose of the 'let' keyword in JavaScript?",
+        "options": ["Declares a variable with block scope", "Declares a variable with global scope", "Declares a constant variable", "Declares a variable with function scope"],
+        "correctAnswer": "Declares a variable with block scope"
+      },
+      {
+        "question": "What is a closure in JavaScript?",
+        "options": ["A way to close a program", "A function with access to variables from its outer scope", "A built-in JavaScript method", "An error in the code"],
+        "correctAnswer": "A function with access to variables from its outer scope"
+      },
+      {
+        "question": "How do you add an element to the end of an array in JavaScript?",
+        "options": ["array.push()", "array.add()", "array.append()", "array.insert()"],
+        "correctAnswer": "array.push()"
+      },
+      {
+        "question": "What does JSON stand for?",
+        "options": ["JavaScript Object Notation", "JavaScript Object Network", "Java Object Notation", "JSON is not an acronym"],
+        "correctAnswer": "JavaScript Object Notation"
+      },
+      {
+        "question": "What is the purpose of the 'async' keyword in JavaScript?",
+        "options": ["To create an asynchronous function", "To make a function synchronous", "To handle errors in a function", "To declare a constant variable"],
+        "correctAnswer": "To create an asynchronous function"
+      },
+      {
+        "question": "Which operator is used for strict equality in JavaScript?",
+        "options": ["==", "===", "=", "==="],
+        "correctAnswer": "==="
+      },
+      {
+        "question": "What does the 'NaN' acronym stand for?",
+        "options": ["Not a Number", "No and Not", "Negative and Null", "Number and Null"],
+        "correctAnswer": "Not a Number"
+      },
+      {
+        "question": "How do you convert a string to a number in JavaScript?",
+        "options": ["convertToNumber()", "parseInt()", "stringToNumber()", "toNumber()"],
+        "correctAnswer": "parseInt()"
+      },
+      {
+        "question": "Which event is triggered when a user clicks on an HTML element?",
+        "options": ["onmouseover", "onclick", "onchange", "onsubmit"],
+        "correctAnswer": "onclick"
+      },
+      {
+        "question": "What is the purpose of the 'try...catch' statement in JavaScript?",
+        "options": ["To define a function", "To handle errors", "To loop through an array", "To declare a variable"],
+        "correctAnswer": "To handle errors"
+      },
+      {
+        "question": "What is the role of the 'break' statement in a switch statement?",
+        "options": ["To end the switch statement", "To continue to the next case", "To exit the loop", "To skip the current iteration"],
+        "correctAnswer": "To end the switch statement"
+      },
+      {
+        "question": "Which method is used to remove the last element from an array in JavaScript?",
+        "options": ["array.removeLast()", "array.pop()", "array.deleteLast()", "array.spliceLast()"],
+        "correctAnswer": "array.pop()"
+      },
+      {
+        "question": "What is the purpose of the 'const' keyword in JavaScript?",
+        "options": ["To declare a variable with block scope", "To declare a constant variable", "To declare a variable with global scope", "To declare a variable with function scope"],
+        "correctAnswer": "To declare a constant variable"
+      },
+      {
+        "question": "Which object is used for asynchronous programming in JavaScript?",
+        "options": ["Callback", "Promise", "AsyncObject", "EventHandler"],
+        "correctAnswer": "Promise"
+      },
+      {
+        "question": "What does the 'prototype' property do in JavaScript?",
+        "options": ["Creates a new object", "Adds properties and methods to an object", "Defines the type of an object", "Accesses the parent object"],
+        "correctAnswer": "Adds properties and methods to an object"
+      },
+      {
+        "question": "How do you declare a function in JavaScript?",
+        "options": ["function myFunction() {}", "myFunction = function() {}", "var myFunction = {};", "function = myFunction() {}"],
+        "correctAnswer": "function myFunction() {}"
+      },
+      {
+        "question": "What is the purpose of the 'Array.isArray()' method in JavaScript?",
+        "options": ["To check if a variable is an object", "To check if a variable is a function", "To check if a variable is an array", "To check if a variable is a string"],
+        "correctAnswer": "To check if a variable is an array"
+      },
+      {
+        "question": "Which method is used to join elements of an array into a string?",
+        "options": ["concat()", "join()", "merge()", "combine()"],
+        "correctAnswer": "join()"
+      },
+      {
+        "question": "What is the purpose of the 'localStorage' object in JavaScript?",
+        "options": ["To store data temporarily during a session", "To store data permanently on the server", "To store data permanently on the client", "To store data in the cache"],
+        "correctAnswer": "To store data permanently on the client"
+      },
+      {
+        "question": "What does the 'script' tag do in HTML when referring to an external JavaScript file?",
+        "options": ["Defines a new script", "Includes an external stylesheet", "Links to an external JavaScript file", "Displays a message"],
+        "correctAnswer": "Links to an external JavaScript file"
+      },
+      {
+        "question": "How do you create a new object in JavaScript?",
+        "options": ["new Object()", "{}", "Object.create()", "createObject()"],
+        "correctAnswer": "new Object()"
+      },
+      {
+        "question": "What is the purpose of the 'map()' method in JavaScript?",
+        "options": ["To iterate over elements of an array", "To create a new array with the results of a function", "To check if an element exists in an array", "To filter elements of an array"],
+        "correctAnswer": "To create a new array with the results of a function"
+      }
+    ]
+  }
+  
