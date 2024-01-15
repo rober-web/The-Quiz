@@ -13,6 +13,9 @@ let initials = document.getElementById('initials');
 let submit = document.getElementById('submit');
 let feedback = document.getElementById('feedback');
 let timeContent = document.getElementById('time');
+let theAnswer;
+let theRightAnswer = 0;
+let theWrongAnswer = 0;
 let time;
 let score = 0;
 let wins = 0;
@@ -37,6 +40,7 @@ const startQuiz = () => {
    
     //disable start button to avoid running the timer twice
     start.setAttribute('disabled', 'disabled'); 
+    start.classList.add('hide');
     questions.classList.remove('hide');
     runningGame(); //start the game
 
@@ -56,6 +60,7 @@ const startQuiz = () => {
             clearInterval(timerInterval); // Stop the timer
 
             //enable the start button back after timer stops
+            start.classList.remove('hide');
             start.removeAttribute('disabled');
         }
     }, 1000);
@@ -70,8 +75,8 @@ const displayTime = () => {
 }
  
 start.addEventListener('click', startQuiz);
-//   * Questions contain buttons for each answer.
-//   * 
+
+
 //   * When answer is clicked, the next question appears
 //   * 
 //   * If the answer clicked was incorrect then subtract time from the clock
@@ -80,37 +85,74 @@ start.addEventListener('click', startQuiz);
 
 //   * When the game ends, it should display their score and give the user the ability to save their initials and their score
 
-/*  const questionsJson = ()=>{
-
-    fetch('./assets/json/questions.json')
-    .then((response) => response.json())
-    .then((json) => console.log(json));
-
-}  */
-
+// Function to run the core of the game
 const runningGame = () => {
 
-    // Check if theQuestions and questions array are defined
-    if (theQuestions && theQuestions.questions && theQuestions.questions.length > 0) {
-        // Display the title of the first question
-        questionTitle.append(theQuestions.questions[0].question);
-       // choices.append(theQuestions.questions[0].options[0]);
-
-      for(let i=0; i<theQuestions.questions[0].options.length; i++){
-            let theChoiceButton = document.createElement('button');
-            let questionList = theQuestions.questions[0].options[i];
-
-            theChoiceButton.innerHTML = questionList;
-            choices.append(theChoiceButton);
-        } 
+        //use displayQuestion function to display the questions
+        displayQuestion(0);
 
 
 
-        console.log(questionTitle.textContent = theQuestions.questions[0].question);
-    } else {
-        console.error('Questions array is undefined or empty.');
-    }
+        
+        
+
+
+
 }
 
 
-//runningGame();
+//Function to display the questions and their proper options
+const displayQuestion = (qIndex)=>{
+
+//get the current index
+    const currentIndex = questionTitle.append(theQuestions.questions[qIndex].question);
+
+    // Check if theQuestions and questions array are defined
+    if (theQuestions && theQuestions.questions && theQuestions.questions.length > 0) {
+
+     //iterate over the questions options and display 
+
+    for(let i=0; i<theQuestions.questions[qIndex].options.length; i++){
+
+        theAnswer = theQuestions.questions[qIndex].correctAnswer;
+        console.log(theAnswer);
+        //   * Questions contain buttons for each answer.
+
+            let theChoiceButton = document.createElement('button');
+            theChoiceButton.classList.add('options-choice');
+
+            //access the options
+            let questionList = theQuestions.questions[qIndex].options[i];
+
+            theChoiceButton.innerHTML = questionList;
+
+            choices.append(theChoiceButton);
+  
+        } 
+
+       // created event to capture the buttons clicked and manipulate them
+
+        document.addEventListener('click', (e) => {
+            let buttonValue = e.target.textContent || e.target.innerText;
+            if (e.target.classList.contains('options-choice') ) {
+                
+                console.log('Clicked button value:', buttonValue);
+                if(buttonValue === theAnswer){
+                    console.log("The answer is CORRECT!!!")
+                    theRightAnswer++;
+                }
+                else{
+                    console.log(`Sorry, ${e.target.textContent} is the wrong answer`);
+                    theWrongAnswer++;
+                    console.log(parseInt(theWrongAnswer));
+                }
+            }
+        });
+        
+    } else {
+        console.error('Questions array is undefined or empty.');
+    }
+
+}
+
+
