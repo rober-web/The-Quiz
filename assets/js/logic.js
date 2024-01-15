@@ -79,7 +79,6 @@ start.addEventListener('click', startQuiz);
 
 //   * When answer is clicked, the next question appears
 //   * 
-//   * If the answer clicked was incorrect then subtract time from the clock
 
 // * The quiz should end when all questions are answered or the timer reaches 0.
 
@@ -145,6 +144,7 @@ const displayQuestion = (qIndex)=>{
                     console.log(`Sorry, ${e.target.textContent} is the wrong answer`);
                     theWrongAnswer++;
                     console.log(parseInt(theWrongAnswer));
+                    timerDiscount();
                 }
             }
         });
@@ -155,4 +155,9 @@ const displayQuestion = (qIndex)=>{
 
 }
 
+//   * If the answer clicked was incorrect then subtract time from the clock
+//tmerDiscount function will rest time from the clock if player click the wrong answer
 
+const timerDiscount = () =>{
+    time = time -10;
+}
