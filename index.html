@@ -22,13 +22,16 @@
           limit. Keep in mind that incorrect answers will penalize your
           score/time by ten seconds!
         </p>
+        
+        <div id="questions" class="hide">
+          <h2 id="question-title"></h2>
+          <div id="choices" class="choices"></div>
+        </div>
+
         <button id="start">Start Quiz</button>
       </div>
 
-      <div id="questions" class="hide">
-        <h2 id="question-title"></h2>
-        <div id="choices" class="choices"></div>
-      </div>
+
 
       <div id="end-screen" class="hide">
         <h2>All done!</h2>
@@ -42,7 +45,6 @@
       <div id="feedback" class="feedback hide"></div>
     </div>
 
-    <script src="./assets/js/questions.js"></script>
-    <script src="./assets/js/logic.js"></script>
+    <script type ="module" src="./assets/js/logic.js"></script>
   </body>
 </html>
