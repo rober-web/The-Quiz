@@ -1,0 +1,56 @@
+{
+    "questions": [
+      {
+        "question": "What does DOM stand for?",
+        "options": ["Document Object Model", "Data Object Model", "Dynamic Object Model", "Digital Object Model"],
+        "correctAnswer": "Document Object Model"
+      },
+      {
+        "question": "Which keyword is used to declare a variable in JavaScript?",
+        "options": ["var", "let", "const", "both var and let"],
+        "correctAnswer": "both var and let"
+      },
+      {
+        "question": "What is the result of 10 + '5' in JavaScript?",
+        "options": ["15", "105", "Error", "undefined"],
+        "correctAnswer": "105"
+      },
+      {
+        "question": "How do you comment out multiple lines in JavaScript?",
+        "options": ["// This is a comment", "/* This is a comment */", "<!-- This is a comment -->", "# This is a comment"],
+        "correctAnswer": "/* This is a comment */"
+      },
+      {
+        "question": "Which built-in method returns the length of a string in JavaScript?",
+        "options": ["length()", "getSize()", "count()", "size()"],
+        "correctAnswer": "length()"
+      },
+      {
+        "question": "What is the purpose of the 'let' keyword in JavaScript?",
+        "options": ["Declares a variable with block scope", "Declares a variable with global scope", "Declares a constant variable", "Declares a variable with function scope"],
+        "correctAnswer": "Declares a variable with block scope"
+      },
+      {
+        "question": "What is a closure in JavaScript?",
+        "options": ["A way to close a program", "A function with access to variables from its outer scope", "A built-in JavaScript method", "An error in the code"],
+        "correctAnswer": "A function with access to variables from its outer scope"
+      },
+      {
+        "question": "How do you add an element to the end of an array in JavaScript?",
+        "options": ["array.push()", "array.add()", "array.append()", "array.insert()"],
+        "correctAnswer": "array.push()"
+      },
+      {
+        "question": "What does JSON stand for?",
+        "options": ["JavaScript Object Notation", "JavaScript Object Network", "Java Object Notation", "JSON is not an acronym"],
+        "correctAnswer": "JavaScript Object Notation"
+      },
+      {
+        "question": "What is the purpose of the 'async' keyword in JavaScript?",
+        "options": ["To create an asynchronous function", "To make a function synchronous", "To handle errors in a function", "To declare a constant variable"],
+        "correctAnswer": "To create an asynchronous function"
+      }
+     
+    ]
+  }
+  
