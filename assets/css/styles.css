@@ -1,6 +1,8 @@
 body {
   font-family: Arial;
   font-size: 120%;
+  margin: 0;
+  padding: 0;
 }
 
 a {
@@ -54,7 +56,7 @@ li:nth-child(odd) {
 }
 
 .wrapper {
-  margin: 100px auto 0 auto;
+  margin:0 auto;
   max-width: 600px;
 }
 
@@ -66,12 +68,6 @@ li:nth-child(odd) {
   text-align: center;
 }
 
-.scores {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-}
-
 .feedback {
   font-style: italic;
   font-size: 120%;
@@ -81,8 +77,39 @@ li:nth-child(odd) {
   border-top: 2px solid #ccc;
 }
 
-.timer {
-  position: absolute;
-  top: 10px;
-  right: 10px;
+#header {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box; /* Ensures padding is included in the width */
 }
+#header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; /* Stack the child elements vertically */
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 0;
+}
+
+.scores,
+.timer {
+  margin: 10px 0; /* Adjust margin as needed */
+}
+
+.timer {
+  font-size: 4em;
+  color:green;
+}
+
+#end-screen >h2{
+  text-align: center;
+}
+
+#end-screen >p{
+  text-align: center;
+}
+
